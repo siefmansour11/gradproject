@@ -109,6 +109,10 @@ LCD4_clear();
 if (command != '\0') {
 
         switch (command) {
+              case '#':  
+            LCD4_clear();  
+            Display_Menu();
+            break;
             case '0':
                 LED_ON(LED0_ID);
                 LCD4_clear();
